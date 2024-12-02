@@ -7,7 +7,7 @@ class ClassComp extends React.Component{
    }
    componentDidMount()
    {
-       console.warn("called life cycle")
+       console.warn("called lifecycle")
    }
    render()
    {
