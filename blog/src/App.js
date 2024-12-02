@@ -5,6 +5,7 @@ import Home from './Home';
 import ClassComp from './ClassComp';
 import Functional from './Functional';
 import Props from './Props';
+import State from './State';
 function App() {
   return (
     <div className="App">
@@ -26,7 +27,7 @@ function App() {
 
        <Props text={{name:'peter'}}  data="Props Data"/>
       </header> 
-
+       <State />
       {/* AT A TIME WE WE USE TWO <Props text={{name:'peter'}}  data="peter Data"/>
       <Props text={{name:'bruce'}}  data="Bruce Data"/>
       </header> */}
