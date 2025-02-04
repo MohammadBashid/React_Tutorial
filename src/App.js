@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import React from 'react'
 import logo from './logo.svg';
 import './App.css';
@@ -7,6 +8,15 @@ import Functional from './Functional';
 import Props from './Props';
 import State from './State';
 function App() {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    // Fetching data from the Express back-end
+    fetch('http://localhost:5000/api/data')
+    .then(response => response.json())
+    .then(data => setData(data.message));
+  }, []);
+  
   return (
     <div className="App">
        <header className="App-header">
